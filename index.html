@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <button class="burger">
+        <span></span>
+      </button>
+      <div class="header__block header__phones">
+        <a href="tel:+380986328874" class="header__phone phone">+38098-632-88-74</a>
+        <a href="tel:+380986328874" class="header__phone phone">+38098-632-88-74</a>
+      </div>
+      <div class="header__block">
+        <form class="form-search search">
+          <input id="search" type="text" class="">
+          <button class="btn">Поиск</button>
+        </form>
+        <div class="social">
+          <a href="#" class="social__link">
+            <img src="./img/icons/social/instagram.svg" alt="">
+          </a>
+          <a href="#" class="social__link">
+            <img src="./img/icons/social/telegram.svg" alt="">
+          </a>
+          <a href="#" class="social__link">
+            <img src="./img/icons/social/facebook.svg" alt="">
+          </a>
+          <a href="#" class="social__link">
+            <img src="./img/icons/social/youtube.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="overlay"></div>
+  <div class="page">
+    <div class="page__inner">
+      <aside class="sidebar">
+  <div class="sidebar__inner">
+    <button class="burger burger__close active">
+      <span></span>
+    </button>
+    <a class="logo" href="index.html">
+      <img src="./img/logo.svg" alt="" class="logo__img">
+      <h4 class="logo__title">Godlike</h4>
+      <div class="logo__text">хостинг игровых серверов</div>
+    </a>
+    <div class="sidebar__action">
+      <a href="catalog-create.html" class="sidebar__btn btn btn--main"><span>Арендовать сервер</span> <span class="line"
+          style="background-image: url('./img/bottom-line.svg');"></span></a>
+    </div>
+    <nav class="sidebar__nav nav-sidebar">
+      <div class="nav-sidebar__block">
+        <h4 class="nav-sidebar__block-title sidebar-subtitle">Продукты</h4>
+        <ul class="nav-sidebar__list">
+          <li><a href="catalog.html" class="nav-sidebar__block-link"><span class="icon icon--1"></span>Игровые серверы</a></li>
+          <li><a href="catalog-esp.html" class="nav-sidebar__block-link"><span class="icon icon--2"></span>Игровые серверы EPS </a>
+          </li>
+          <li><a href="catalog-voice.html" class="nav-sidebar__block-link"><span class="icon icon--3"></span>Голосовые серверы</a></li>
+        </ul>
+      </div>
+      <div class="nav-sidebar__block">
+        <h4 class="nav-sidebar__block-title sidebar-subtitle">Сообщество</h4>
+        <ul class="nav-sidebar__list">
+          <li><a href="news.html" class="nav-sidebar__block-link"><span class="icon icon--4"></span>Новости</a></li>
+          <li><a href="database.html" class="nav-sidebar__block-link"><span class="icon icon--5"></span>База знаний</a></li>
+          <li><a href="#" class="nav-sidebar__block-link"><span class="icon icon--6"></span>Форум</a></li>
+        </ul>
+      </div>
+      <div class="nav-sidebar__block">
+        <h4 class="nav-sidebar__block-title sidebar-subtitle">Бизнес</h4>
+        <ul class="nav-sidebar__list">
+          <li><a href="#" class="nav-sidebar__block-link"><span class="icon icon--7"></span>Игровык Студии</a></li>
+          <li><a href="#" class="nav-sidebar__block-link"><span class="icon icon--8"></span>Примеры из практики</a></li>
+        </ul>
+      </div>
+      <div class="nav-sidebar__block">
+        <a href="#" class="sidebar-subtitle link">Вход</a>
+      </div>
+      <div class="nav-sidebar__block nav-sidebar__block--mobile">
+        <div class="header__block header__phones mobile-phones">
+          <a href="tel:+380986328874" class="header__phone phone">+38098-632-88-74</a>
+          <a href="tel:+380986328874" class="header__phone phone">+38098-632-88-74</a>
+        </div>
+        <div class="social">
+          <a href="#" class="social__link">
+            <img src="./img/icons/social/instagram.svg" alt="">
+          </a>
+          <a href="#" class="social__link">
+            <img src="./img/icons/social/telegram.svg" alt="">
+          </a>
+          <a href="#" class="social__link">
+            <img src="./img/icons/social/facebook.svg" alt="">
+          </a>
+          <a href="#" class="social__link">
+            <img src="./img/icons/social/youtube.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</aside>;
+      <main class="main">
+        <div class="intro container container--small">
+          <div class="intro__header">
+            <div class="intro__actions action-btns">
+              <a href="#" class="btn btn--intro"><span>ARK: Survival Evolved</span> <span class="line"
+                  style="background-image: url('./img/bottom-line.svg')"></span></a>
+              <a href="#" class="btn btn--intro"><span>Conan Exiles</span> <span class="line"
+                  style="background-image: url('./img/bottom-line.svg')"></span></a>
+              <a href="#" class="btn btn--intro"><span>Minecraft</span> <span class="line"
+                  style="background-image: url('./img/bottom-line.svg')"></span></a>
+              <a href="#" class="btn btn--intro"><span>Valheim</span> <span class="line"
+                  style="background-image: url('./img/bottom-line.svg')"></span></a>
+            </div>
+          </div>
+          <img class="intro__img" src="./img/intro/intro-text.png" alt="">
+        </div>
+        <section class="advantages container container--small">
+          <h2 class="main-title">Преимущества</h2>
+          <div class="advantages__inner">
+            <div class="advantages__item">
+              <div class="advantages__item-img">
+                <img src="./img/advantages/advantage-img_1.png" alt="">
+              </div>
+              <div class="advantages__item-title">Самые низкие цены</div>
+              <div class="advantages__item-text">Godlike гарантирует самые низкие цены. Если вы найдете другой хостинг,
+                который предоставит такие же варианты за меньшую <a href="#">плату</a>, воспользуйтесь нашей <a
+                  href="#">формой цены</a>, и мы сопоставим его или предоставим вам бесплатный месяц!</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img">
+                <img src="./img/advantages/advantage-img_2.png" alt="">
+              </div>
+              <div class="advantages__item-title">Высокая производительность</div>
+              <div class="advantages__item-text">Godlike предлагает быстрые и надежные процессоры, быстрое хранилище
+                NVMe, оперативную память DDR4 и многое другое. Благодаря быстрой сети, защищенной от DDoS-атак, и
+                многому другому для игр без задержек.</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img advantages__item-img--small">
+                <img src="./img/advantages/advantage-img_3.png" alt="">
+              </div>
+              <div class="advantages__item-title">Дружелюбный персонал</div>
+              <div class="advantages__item-text">Нашей заботой №1 в ServerBlend является ваше удовлетворение. Не <a
+                  href="#">верите</a> нам, послушайте, что говорят сотни счастливых клиентов , которые сделали нас самым
+                <a href="#">популярным хостом игрового сервера для песочницы в TrustPilot </a>!
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popular games container container--small">
+          <div class="header-block">
+            <h2 class="main-title">Популярные</h2>
+            <a href="/news.html" class="main-link"><span class="icon"></span>ВСЕ СЕРВЕРЫ</a>
+          </div>
+          <div class="games__row">
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_1.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_2.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_3.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_4.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_5.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_6.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_7.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_8.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="games container container--small">
+          <div class="header-block">
+            <h2 class="main-title">Новинки</h2>
+            <a href="/news.html" class="main-link"><span class="icon"></span>ВСЕ СЕРВЕРЫ</a>
+          </div>
+          <div class="games__row">
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_9.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_10.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_11.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="games__col">
+              <a href="#" class="games__item">
+                <div class="games__item-inner">
+                  <div class="games__item-img">
+                    <img src="./img/games/item-img_12.png" alt="">
+                  </div>
+                  <div class="games__item-pc">РС</div>
+                  <div class="games__item-content">
+                    <div class="games__item-title">Battlefield 3 EPS</div>
+                    <div class="games__item-price">1.59 $</div>
+                    <div class="line" style="background-image: url('./img/bottom-line.svg')"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="news-block container container--small">
+          <div class="header-block">
+            <h2 class="main-title">Новости</h2>
+            <a href="/news.html" class="main-link"><span class="icon"></span>ВСЕ новости</a>
+          </div>
+          <div class="news">
+            <div class="news__main">
+              <a href="#" class="news__main-img main-effect">
+                <img src="./img/news/news-img_1.png" alt="">
+                <div class="news__main-info info-news">
+                  <div class="info-news__content">
+                    Сервер Farming Simulator 22
+                  </div>
+                  <div class="info-news__bg"></div>
+                </div>
+              </a>
+              <article class="news__main-content main-content">
+                <time class="main-content__date" datetime="2021-05-15">23/09/21</time>
+                <div class="main-content__header">
+                  <div class="main-content__author">Автор: <span>Андрей Безруков</span></div>
+                  <div class="main-content__rating rating">
+                    <img src="./img/icons/rating-star_active.svg" alt="">
+                    <img src="./img/icons/rating-star_active.svg" alt="">
+                    <img src="./img/icons/rating-star_active.svg" alt="">
+                    <img src="./img/icons/rating-star_active.svg" alt="">
+                    <img src="./img/icons/rating-star_notActive.svg" alt="">
+                  </div>
+                </div>
+                <div class="main-content__body">
+                  <a href="#">
+                    <h2 class="main-content__title">Сервер Farming Simulator 22 - предварительная продажа</h2>
+                  </a>
+                  <div class="main-content__descr">
+                    <p>
+                      Скоро появится новый Farming Simulator 22 от Giants Software. Мы с нетерпением ждем возможности
+                      снова возделывать наши поля с помощью множества детализированных тракторов и другой
+                      сельскохозяйственной техники. И сегодня у нас для вас особые новости.
+                    </p>
+                  </div>
+                  <div class="main-content__footer">
+                    <a href="#" class="main-content__comments">
+                      Комментарии (<span>2251</span>)
+                    </a>
+                    <div class="main-content__actions">
+                      <div class="main-content__views">
+                        <img src="./img/icons/eye.svg" alt="">
+                        (<span>214</span>)
+                      </div>
+                      <div class="main-content__like">
+                        <img src="./img/icons/heart.svg" alt="">
+                        (<span>214</span>)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="news__items">
+              <div class="news__item item-news">
+                <a href="#" class="item-news__img main-effect main-effect--small">
+                  <img src="./img/news/news-item_1.png" alt="">
+                  <div class="news__main-info info-news">
+                    <div class="info-news__content">
+                      Valheim - 25% скидка на выходные
+                    </div>
+                    <div class="info-news__bg"></div>
+                  </div>
+                </a>
+                <div class="item-news__header">
+                  <div class="item-news__author">
+                    Автор: <span>Андрей Безруков</span>
+                  </div>
+                  <time class="item-news__date" datetime="2021-05-15">
+                    23/09/21
+                  </time>
+                </div>
+                <a href="#">
+                  <h3 class="item-news__title">Valheim - обновление «Hearth & Home» и 25% скидка на выходные</h3>
+                </a>
+              </div>
+              <div class="news__item item-news">
+                <a href="#" class="item-news__img main-effect main-effect--small">
+                  <img src="./img/news/news-item_2.png" alt="">
+                  <div class="news__main-info info-news">
+                    <div class="info-news__content">
+                      Динозавры прибывают!
+                    </div>
+                    <div class="info-news__bg"></div>
+                  </div>
+                </a>
+                <div class="item-news__header">
+                  <div class="item-news__author">
+                    Автор: <span>Андрей Безруков</span>
+                  </div>
+                  <time class="item-news__date" datetime="2021-05-15">
+                    23/09/21
+                  </time>
+                </div>
+                <a href="#">
+                  <h3 class="item-news__title">Valheim - обновление «Hearth & Home» и 25% скидка на выходные</h3>
+                </a>
+              </div>
+              <div class="news__item item-news">
+                <a href="#" class="item-news__img main-effect main-effect--small">
+                  <img src="./img/news/news-item_3.png" alt="">
+                  <div class="news__main-info info-news">
+                    <div class="info-news__content">
+                      Скидка 25% и отличные призы
+                    </div>
+                    <div class="info-news__bg"></div>
+                  </div>
+                </a>
+                <div class="item-news__header">
+                  <div class="item-news__author">
+                    Автор: <span>Андрей Безруков</span>
+                  </div>
+                  <time class="item-news__date" datetime="2021-05-15">
+                    23/09/21
+                  </time>
+                </div>
+                <a href="#">
+                  <h3 class="item-news__title">Игровая неделя - скидка 25% и отличные призы</h3>
+                </a>
+              </div>
+              <div class="news__item item-news">
+                <a href="#" class="item-news__img main-effect main-effect--small">
+                  <img src="./img/news/news-item_4.png" alt="">
+                  <div class="news__main-info info-news">
+                    <div class="info-news__content">
+                      Valheim - 25% скидка на выходные
+                    </div>
+                    <div class="info-news__bg"></div>
+                  </div>
+                </a>
+                <div class="item-news__header">
+                  <div class="item-news__author">
+                    Автор: <span>Андрей Безруков</span>
+                  </div>
+                  <time class="item-news__date" datetime="2021-05-15">
+                    23/09/21
+                  </time>
+                </div>
+                <a href="#">
+                  <h3 class="item-news__title">Valheim - обновление «Hearth & Home» и 25% скидка на выходные</h3>
+                </a>
+              </div>
+              <div class="news__item item-news">
+                <a href="#" class="item-news__img main-effect main-effect--small">
+                  <img src="./img/news/news-item_5.png" alt="">
+                  <div class="news__main-info info-news">
+                    <div class="info-news__content">
+                      Valheim - 25% скидка на выходные
+                    </div>
+                    <div class="info-news__bg"></div>
+                  </div>
+                </a>
+                <div class="item-news__header">
+                  <div class="item-news__author">
+                    Автор: <span>Андрей Безруков</span>
+                  </div>
+                  <time class="item-news__date" datetime="2021-05-15">
+                    23/09/21
+                  </time>
+                </div>
+                <a href="#">
+                  <h3 class="item-news__title">Ark: Survival Evolved - динозавры прибывают на Стадион</h3>
+                </a>
+              </div>
+              <div class="news__item item-news">
+                <a href="#" class="item-news__img main-effect main-effect--small">
+                  <img src="./img/news/news-item_6.png" alt="">
+                  <div class="news__main-info info-news">
+                    <div class="info-news__content">
+                      Игровая неделя
+                    </div>
+                    <div class="info-news__bg"></div>
+                  </div>
+                </a>
+                <div class="item-news__header">
+                  <div class="item-news__author">
+                    Автор: <span>Андрей Безруков</span>
+                  </div>
+                  <time class="item-news__date" datetime="2021-05-15">
+                    23/09/21
+                  </time>
+                </div>
+                <a href="#">
+                  <h3 class="item-news__title">Игровая неделя - скидка 25% и отличные призы</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="slider-card container container--small">
+          <div class="slider-card__title">
+            <img src="./img/slider-card__title.png" alt="">
+          </div>
+          <div class="slider-card__wrapp">
+            <div class="slider-card__slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="slider-card__item item-card main-effect">
+                    <div class="item-card__header">
+                      <div class="item-card__rating">
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                      </div>
+                      <time class="item-card__date" datetime="2021-05-15">23/09/21</time>
+                    </div>
+                    <div class="item-card__content">
+                      <div class="item-card__title">Отличная работа!</div>
+                      <div class="item-card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...
+                      </div>
+                    </div>
+                    <div class="item-card__author">
+                      Артур Клочко
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="slider-card__item item-card main-effect">
+                    <div class="item-card__header">
+                      <div class="item-card__rating">
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                      </div>
+                      <time class="item-card__date" datetime="2021-05-15">23/09/21</time>
+                    </div>
+                    <div class="item-card__content">
+                      <div class="item-card__title">Отличная работа!</div>
+                      <div class="item-card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...
+                      </div>
+                    </div>
+                    <div class="item-card__author">
+                      Артур Клочко
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="slider-card__item item-card main-effect">
+                    <div class="item-card__header">
+                      <div class="item-card__rating">
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                      </div>
+                      <time class="item-card__date" datetime="2021-05-15">23/09/21</time>
+                    </div>
+                    <div class="item-card__content">
+                      <div class="item-card__title">Отличная работа!</div>
+                      <div class="item-card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...
+                      </div>
+                    </div>
+                    <div class="item-card__author">
+                      Артур Клочко
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="slider-card__item item-card main-effect">
+                    <div class="item-card__header">
+                      <div class="item-card__rating">
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                      </div>
+                      <time class="item-card__date" datetime="2021-05-15">23/09/21</time>
+                    </div>
+                    <div class="item-card__content">
+                      <div class="item-card__title">Отличная работа!</div>
+                      <div class="item-card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...
+                      </div>
+                    </div>
+                    <div class="item-card__author">
+                      Артур Клочко
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="slider-card__item item-card main-effect">
+                    <div class="item-card__header">
+                      <div class="item-card__rating">
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                        <div class="item-card__rating-item">
+                          <img src="./img/icons/rating-star.svg" alt="">
+                        </div>
+                      </div>
+                      <time class="item-card__date" datetime="2021-05-15">23/09/21</time>
+                    </div>
+                    <div class="item-card__content">
+                      <div class="item-card__title">Отличная работа!</div>
+                      <div class="item-card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...
+                      </div>
+                    </div>
+                    <div class="item-card__author">
+                      Артур Клочко
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-buttons">
+              <div class="swiper-button-prev slider-card__button-prev">
+                <img src="./img/icons/arrow-prev.svg" alt="">
+              </div>
+              <div class="swiper-button-next slider-card__button-next">
+                <img src="./img/icons/arrow-next.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="slider-card__text">
+            Rated 4.9 / 5 based on <a href="#">394 reviews</a>. Showing our 4 & 5 star reviews.
+          </div>
+          <div class="slider-card__img">
+            <img src="./img/slider-card__title.png" alt="">
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+  <div class="footer__container container container--small">
+    <div class="footer__logo">
+      <a href="/index.html">
+        <img src="./img/logo.svg" alt="">
+      </a>
+      <div class="footer__text">
+        Авторское право
+        @ 2021, GODLIKE.
+        Все права защищены.</div>
+    </div>
+    <nav class="footer__nav">
+      <div class="footer__nav-col">
+        <h5 class="footer__subtitle">Популярные игры</h5>
+        <div class="footer__nav-links">
+          <a href="#" class="footer__nav-link">ARK: Survival Evolved</a>
+          <a href="#" class="footer__nav-link">Conan Exiles</a>
+          <a href="#" class="footer__nav-link">Farming Simulator 19</a>
+          <a href="#" class="footer__nav-link">Minecraft</a>
+          <a href="#" class="footer__nav-link">Valheim</a>
+        </div>
+      </div>
+      <div class="footer__nav-col">
+        <h5 class="footer__subtitle">Учетная запись</h5>
+        <div class="footer__nav-links">
+          <a href="#" class="footer__nav-link">Вход</a>
+          <a href="#" class="footer__nav-link">Регистрация</a>
+        </div>
+      </div>
+      <div class="footer__nav-col">
+        <h5 class="footer__subtitle">Портал</h5>
+        <div class="footer__nav-links">
+          <a href="#" class="footer__nav-link">Для игровых студий</a>
+          <a href="#" class="footer__nav-link">О компании</a>
+          <a href="#" class="footer__nav-link">О Статус</a>
+          <a href="#" class="footer__nav-link">Условия и положения</a>
+          <a href="#" class="footer__nav-link">Конфидициальность</a>
+        </div>
+      </div>
+      <div class="footer__nav-col">
+        <h5 class="footer__subtitle">Язык и страна</h5>
+        <div class="footer__nav-links">
+          <a href="#" class="footer__nav-link">Россия / Русский</a>
+          <a href="#" class="footer__nav-link">Валюта</a>
+        </div>
+      </div>
+      <div class="footer__nav-col">
+        <h5 class="footer__subtitle">Служба поддержки</h5>
+        <div class="footer__nav-links">
+          <a href="#" class="footer__nav-link">Твиттер</a>
+          <a href="#" class="footer__nav-link">Facebook</a>
+          <a href="#" class="footer__nav-link">Instagram</a>
+          <a href="#" class="footer__nav-link">Горячая линия: <br>04008008080</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</footer>
+    </div>
+
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
