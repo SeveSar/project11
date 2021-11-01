@@ -1049,6 +1049,14 @@ img {
   margin-right: 93px;
 }
 
+.header-block--mb-20 {
+  margin-bottom: 20px;
+}
+
+.header-block--mb-40 {
+  margin-bottom: 40px;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   width: 24px;
@@ -1259,47 +1267,6 @@ img {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
-}
-
-.advantages-god__list li {
-  font-size: 14px;
-  line-height: 16px;
-  color: #BFBFBF;
-  padding-left: 32px;
-  margin-bottom: 24px;
-  position: relative;
-}
-
-.advantages-god__list li:last-child {
-  margin-bottom: 0;
-}
-
-.advantages-god__list li::before,
-.advantages-god__list li::after {
-  content: "";
-  border-radius: 50%;
-  position: absolute;
-}
-
-.advantages-god__list li::before {
-  background-color: #15142A;
-  width: 12px;
-  height: 12px;
-  top: 2px;
-  left: 3px;
-  z-index: 2;
-}
-
-.advantages-god__list li::after {
-  background: #30BDEF;
-  opacity: 0.8;
-  -webkit-filter: blur(11px);
-  filter: blur(11px);
-  width: 18px;
-  height: 18px;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .rise-up {
@@ -2733,6 +2700,10 @@ h6 {
 
 .advantages__item-text a:hover {
   color: #30BDEF;
+}
+
+.advantages--mt-0 {
+  margin-top: 0;
 }
 
 .games {
@@ -4245,6 +4216,51 @@ h6 {
   color: #BFBFBF;
 }
 
+.advantages-god__list li {
+  font-size: 14px;
+  line-height: 16px;
+  color: #BFBFBF;
+  padding-left: 32px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.advantages-god__list li:last-child {
+  margin-bottom: 0;
+}
+
+.advantages-god__list li::before,
+.advantages-god__list li::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+}
+
+.advantages-god__list li::before {
+  background-color: #15142A;
+  width: 12px;
+  height: 12px;
+  top: 2px;
+  left: 3px;
+  z-index: 2;
+}
+
+.advantages-god__list li::after {
+  background: #30BDEF;
+  opacity: 0.8;
+  -webkit-filter: blur(11px);
+  filter: blur(11px);
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.advantages-god--mt-100 {
+  margin-top: 100px;
+}
+
 .some-text {
   margin-top: 100px;
 }
@@ -4261,6 +4277,10 @@ h6 {
 
 .some-text__text p + p {
   margin-top: 25px;
+}
+
+.some-text--mt-0 {
+  margin-top: 0;
 }
 
 .comments {
@@ -7046,12 +7066,20 @@ h6 {
     line-height: 21px;
   }
 
+  .advantages-god--mt-100 {
+    margin-top: 60px;
+  }
+
   .some-text {
     margin-top: 60px;
   }
 
   .some-text__inner {
     width: 100%;
+  }
+
+  .some-text--mt-0 {
+    margin-top: 0;
   }
 
   .comments {
