@@ -5330,13 +5330,32 @@ h6 {
   -ms-flex-positive: 1;
   flex-grow: 1;
   min-height: 305px;
+  position: relative;
+}
+
+.slots__item::before {
+  content: "";
   border: 2px solid transparent;
+  border-radius: 5px;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  height: 100%;
   -webkit-transition: border-color .2s linear;
   -o-transition: border-color .2s linear;
   transition: border-color .2s linear;
 }
 
-.slots__item.active {
+.slots__item.active .line {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  background-color: transparent !important;
+}
+
+.slots__item.active::before {
   border-color: #30BDEF;
 }
 
