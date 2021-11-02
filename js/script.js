@@ -110,7 +110,20 @@ if (mobileMenu) {
       selects[i].classList.remove('active')
     }
   }
-};
+}
+
+const slotsItems = document.querySelectorAll('.slots__item');
+
+slotsItems.forEach(item => {
+  item.addEventListener('click', (e) => {
+    for (let i = 0; i < slotsItems.length; i++) {
+      slotsItems[i].classList.remove('active')
+    }
+   e.currentTarget.classList.add('active')
+  })
+})
+
+;
   const buttonsView = document.querySelectorAll('[data-view]');
 const catalogItem = document.querySelector('.games--catalog');
 if (buttonsView.length) {
@@ -210,68 +223,10 @@ if (formAreas.length) {
     removeClassActive()
   }
   // /end selects
-
-  // modal-btn
-  // const modalBtn = e.target.closest('[modal-btn]')
-  // const modalOverlay = document.querySelector('.modal-overlay')
-  // if (modalBtn) {
-  //   e.preventDefault()
-  //   const modal = document.querySelector(modalBtn.getAttribute('modal-btn'))
-  //   if (modalBtn.getAttribute('modal-btn') === '#order-one') {
-  //     const product = document.querySelector('.product--the-one')
-  //     changeModalInfo(modal, product)
-  //   }
-  //   modalOverlay.classList.add('modal-overlay--show')
-  //   showModal(modal)
-  // }
-  // modalOverlay.addEventListener('click', (e) => {
-  //   if (e.target === modalOverlay || e.target.closest('.modal__close')) {
-  //     const modals = document.querySelectorAll('.modal')
-  //     closeModal(modals)
-  //   }
-  // })
-  // function showModal(modal) {
-  //   modal.style.display = 'flex'
-  //   setTimeout(() => {
-  //     modal.classList.add('active')
-  //   }, 200)
-  //   document.body.classList.add('no-scroll')
-  // }
-  // function changeModalInfo(modal, target) {
-  //   const productImg = target
-  //     .querySelector('.product__img img')
-  //     .getAttribute('src')
-  //   const productTitle = target
-  //     .closest('.container')
-  //     .querySelector('.product-title').textContent
-  //   const productPrice = target.getAttribute('data-price')
-  //   modal.querySelector('.modal-info-title').value = productTitle
-  //   modal.querySelector('.modal-info-price').value = productPrice
-  //   modal.querySelector('.modal__title').textContent = productTitle
-  //   const modalProductPrice = modal.querySelector('.modal__price .price')
-  //   modalProductPrice.textContent = productPrice
-  //   modal.querySelector('.modal__img img').setAttribute('src', productImg)
-  // }
-  // function closeModal(modals) {
-  //   modals.forEach((modal) => {
-  //     modal.classList.remove('active')
-  //     modal.querySelectorAll('.modal__form').forEach((form) => form.reset())
-  //     modal
-  //       .querySelectorAll('small')
-  //       .forEach((error) => error.classList.remove('error'))
-  //     setTimeout(() => {
-  //       modal.style.display = 'none'
-  //       modalOverlay.classList.remove('modal-overlay--show')
-  //     }, 300)
-  //   })
-  //   if (
-  //     !mobileMenu.classList.contains('show') &&
-  //     !document.querySelector('.catalog-menu--active')
-  //   ) {
-  //     document.body.classList.remove('no-scroll')
-  //   }
-  // }
-  // /end mdoal-btn
+  const slotsItem = e.target.closest('.slots__item');
+  if (!slotsItem && document.querySelector('.slots__item.active')) {
+    document.querySelector('.slots__item.active').classList.remove('active')
+  }
 })
 ;
 

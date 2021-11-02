@@ -548,6 +548,11 @@ img {
   align-items: center;
 }
 
+.btn:not(.btn--search) {
+  position: relative;
+  overflow: hidden;
+}
+
 .btn--intro {
   background: -o-linear-gradient(1.32deg, #2B2952 0%, #4F2D71 99.16%);
   background: linear-gradient(88.68deg, #2B2952 0%, #4F2D71 99.16%);
@@ -618,27 +623,6 @@ img {
   color: #fff;
 }
 
-.btn--main:hover::before {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-}
-
-.btn--main span {
-  position: relative;
-  z-index: 5;
-}
-
-.btn--main span.line {
-  position: absolute;
-  bottom: -2px;
-  width: 100%;
-  height: 12px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .btn--main::before {
   opacity: 0.8;
   content: "";
@@ -659,6 +643,60 @@ img {
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear;
+}
+
+.btn:not(.btn--search)::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: -50%;
+  right: 47%;
+  top: -101%;
+  bottom: -186%;
+  line-height: 8.34em;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  -o-transition: transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(0, 0) rotate(90deg);
+  -ms-transform: scale(0, 0) rotate(90deg);
+  transform: scale(0, 0) rotate(90deg);
+  background-color: #30bdef;
+}
+
+.btn span {
+  position: relative;
+  z-index: 5;
+}
+
+.btn span.line {
+  position: absolute;
+  bottom: -2px;
+  width: calc(100% - 1.62px);
+  height: 12px;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  background-color: #30BDEF;
+  -webkit-mask-image: url("../img/bottom-line.svg");
+  mask-image: url("../img/bottom-line.svg");
+  -webkit-transition: background-color .3s linear;
+  -o-transition: background-color .3s linear;
+  transition: background-color .3s linear;
+}
+
+.btn:hover::after {
+  -webkit-transform: scale(3, 3);
+  -ms-transform: scale(3, 3);
+  transform: scale(3, 3);
+}
+
+.btn:hover span.line {
+  background-color: #fff;
 }
 
 .phone {
@@ -1032,13 +1070,17 @@ img {
   margin-top: 20px;
 }
 
-.header-block__action .btn {
+.header-block__action .btn.btn--main {
   width: 166px;
   min-width: auto;
 }
 
-.header-block__action .btn .line {
+.header-block__action .btn.btn--main .line {
+  bottom: 0px;
   height: 7px;
+  width: calc(100% - 1.72px);
+  -webkit-mask-image: url("../img/bottom-line-small.svg");
+  mask-image: url("../img/bottom-line-small.svg");
 }
 
 .header-block__slot {
@@ -1160,6 +1202,7 @@ img {
   line-height: 21px;
   color: #FFFFFF;
   font-family: 'Play';
+  position: relative;
 }
 
 .form-search input {
@@ -2604,6 +2647,11 @@ h6 {
 
 .action-btns .btn {
   margin-right: 20px;
+}
+
+.action-btns .btn .line {
+  bottom: -3px;
+  width: calc(100% - 1.82px);
 }
 
 .action-btns .btn:last-child {
@@ -5282,6 +5330,14 @@ h6 {
   -ms-flex-positive: 1;
   flex-grow: 1;
   min-height: 305px;
+  border: 2px solid transparent;
+  -webkit-transition: border-color .2s linear;
+  -o-transition: border-color .2s linear;
+  transition: border-color .2s linear;
+}
+
+.slots__item.active {
+  border-color: #30BDEF;
 }
 
 .slots__item-sale {
@@ -5385,8 +5441,8 @@ h6 {
 }
 
 .slots__item .btn .line {
-  bottom: -1px;
-  width: calc(100% + 2px);
+  bottom: -2.1px;
+  width: calc(100% - 1px);
   opacity: 0;
   -webkit-transition: opacity .2s linear;
   -o-transition: opacity .2s linear;
@@ -5420,7 +5476,8 @@ h6 {
 }
 
 .select.active .select__body {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .select.active .select__header::before {
@@ -5466,7 +5523,11 @@ h6 {
   z-index: 10;
   border-radius: 5px;
   width: 100%;
-  display: none;
+  visibility: hidden;
+  -webkit-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+  opacity: 0;
   border-radius: 0px 0px 5px 5px;
   width: 193px;
   background: rgba(21, 20, 42, 0.6);
